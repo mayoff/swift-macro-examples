@@ -40,6 +40,7 @@ extension AutoEnvironmentKeyMacro: AccessorMacro {
   }
 }
 
+#if false
 extension AutoEnvironmentKeyMacro: PeerMacro {
   public static func expansion<
     Context: MacroExpansionContext,
@@ -71,3 +72,4 @@ extension AutoEnvironmentKeyMacro: PeerMacro {
     ]
   }
 }
+#endif
