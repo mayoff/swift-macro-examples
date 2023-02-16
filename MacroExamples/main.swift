@@ -140,3 +140,12 @@ Task {
 MyStruct().f(a: 1, for: "hello", 3.14159) { result in
   print("Eventually received \(result + "!")")
 }
+
+#if canImport(SwiftUI)
+import SwiftUI
+
+extension EnvironmentValues {
+  @AutoEnvironmentKey
+  var moof: Bool = false
+}
+#endif

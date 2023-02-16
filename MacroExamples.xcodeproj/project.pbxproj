@@ -11,6 +11,9 @@
 		3175781D298DBC8700D79290 /* NewTypeMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175781C298DBC8700D79290 /* NewTypeMacro.swift */; };
 		3175781F298DBFA100D79290 /* NewTypePluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175781E298DBFA100D79290 /* NewTypePluginTests.swift */; };
 		31757821298DC4AF00D79290 /* NewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31757820298DC4AF00D79290 /* NewType.swift */; };
+		31764102299ED65000592E48 /* AutoEnvironmentKeyMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764101299ED65000592E48 /* AutoEnvironmentKeyMacro.swift */; };
+		31764104299ED6C100592E48 /* AutoEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764103299ED6C100592E48 /* AutoEnvironmentKey.swift */; };
+		31764106299ED91F00592E48 /* AutoEnvironmentKeyPluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764105299ED91F00592E48 /* AutoEnvironmentKeyPluginTests.swift */; };
 		371A6719299C241F00E74A8A /* CaseDetectionMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A6718299C241F00E74A8A /* CaseDetectionMacro.swift */; };
 		BD2CDEE9298B24040015A701 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CDEE8298B24040015A701 /* Diagnostics.swift */; };
 		BD2CDEEB298B34730015A701 /* WrapStoredPropertiesMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CDEEA298B34730015A701 /* WrapStoredPropertiesMacro.swift */; };
@@ -76,6 +79,9 @@
 		3175781C298DBC8700D79290 /* NewTypeMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTypeMacro.swift; sourceTree = "<group>"; };
 		3175781E298DBFA100D79290 /* NewTypePluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTypePluginTests.swift; sourceTree = "<group>"; };
 		31757820298DC4AF00D79290 /* NewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewType.swift; sourceTree = "<group>"; };
+		31764101299ED65000592E48 /* AutoEnvironmentKeyMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoEnvironmentKeyMacro.swift; sourceTree = "<group>"; };
+		31764103299ED6C100592E48 /* AutoEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoEnvironmentKey.swift; sourceTree = "<group>"; };
+		31764105299ED91F00592E48 /* AutoEnvironmentKeyPluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoEnvironmentKeyPluginTests.swift; sourceTree = "<group>"; };
 		371A6718299C241F00E74A8A /* CaseDetectionMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseDetectionMacro.swift; sourceTree = "<group>"; };
 		BD2CDEE8298B24040015A701 /* Diagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnostics.swift; sourceTree = "<group>"; };
 		BD2CDEEA298B34730015A701 /* WrapStoredPropertiesMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapStoredPropertiesMacro.swift; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 				BD7324B729989178009C6A08 /* AddCompletionHandlerMacro.swift */,
 				371A6718299C241F00E74A8A /* CaseDetectionMacro.swift */,
 				1D682A91299CE4C6006F9F78 /* AddAsyncMacro.swift */,
+				31764101299ED65000592E48 /* AutoEnvironmentKeyMacro.swift */,
 			);
 			path = MacroExamplesPlugin;
 			sourceTree = "<group>";
@@ -154,6 +161,7 @@
 			children = (
 				BD8A312F294947BD00E83EB9 /* Macros.swift */,
 				31757820298DC4AF00D79290 /* NewType.swift */,
+				31764103299ED6C100592E48 /* AutoEnvironmentKey.swift */,
 			);
 			path = MacroExamplesLib;
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 			children = (
 				BDFB14B42948484000708DA6 /* MacroExamplesPluginTest.swift */,
 				3175781E298DBFA100D79290 /* NewTypePluginTests.swift */,
+				31764105299ED91F00592E48 /* AutoEnvironmentKeyPluginTests.swift */,
 			);
 			path = MacroExamplesPluginTest;
 			sourceTree = "<group>";
@@ -367,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31764104299ED6C100592E48 /* AutoEnvironmentKey.swift in Sources */,
 				BD8A3130294947BD00E83EB9 /* Macros.swift in Sources */,
 				31757821298DC4AF00D79290 /* NewType.swift in Sources */,
 			);
@@ -387,6 +397,7 @@
 				BD841F82294CE1F600DA4D81 /* AddBlocker.swift in Sources */,
 				BD2CDEEB298B34730015A701 /* WrapStoredPropertiesMacro.swift in Sources */,
 				371A6719299C241F00E74A8A /* CaseDetectionMacro.swift in Sources */,
+				31764102299ED65000592E48 /* AutoEnvironmentKeyMacro.swift in Sources */,
 				BD752BE5294D3BEC00D00A2E /* WarningMacro.swift in Sources */,
 				3175781D298DBC8700D79290 /* NewTypeMacro.swift in Sources */,
 				BDF5AFF82947E95C00FA119B /* StringifyMacro.swift in Sources */,
@@ -405,6 +416,7 @@
 			files = (
 				BDFB14B52948484000708DA6 /* MacroExamplesPluginTest.swift in Sources */,
 				3175781F298DBFA100D79290 /* NewTypePluginTests.swift in Sources */,
+				31764106299ED91F00592E48 /* AutoEnvironmentKeyPluginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
