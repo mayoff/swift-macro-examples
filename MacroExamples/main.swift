@@ -111,41 +111,41 @@ print("hostname: description=\(hostname) hashValue=\(hostname.hashValue)")
 let password = Password("squeamish ossifrage")
 print("password: description=\(password) hashValue=\(password.hashValue)")
 
-struct MyStruct {
-  @addCompletionHandler
-  func f(a: Int, for b: String, _ value: Double) async -> String {
-    return b
-  }
-  
-  @addAsync
-  func c(a: Int, for b: String, _ value: Double, completionBlock: @escaping (String) -> Void) -> Void {
-    completionBlock("a: \(a), b: \(b), value: \(value)")
-  }
-  
-  @addAsync
-  func d(a: Int, for b: String, _ value: Double, completionBlock: @escaping () -> Void) -> Void {
-    completionBlock()
-  }
-}
-
-
-Task {
-  let myStruct = MyStruct()
-  let a = await myStruct.c(a: 5, for: "Test", 20)
-  print(a)
-  
-  await myStruct.d(a: 10, for: "value", 40)
-}
-
-MyStruct().f(a: 1, for: "hello", 3.14159) { result in
-  print("Eventually received \(result + "!")")
-}
-
-#if canImport(SwiftUI)
-import SwiftUI
-
-extension EnvironmentValues {
-  @AutoEnvironmentKey
-  var moof: Bool = false
-}
-#endif
+//struct MyStruct {
+//  @addCompletionHandler
+//  func f(a: Int, for b: String, _ value: Double) async -> String {
+//    return b
+//  }
+//
+//  @addAsync
+//  func c(a: Int, for b: String, _ value: Double, completionBlock: @escaping (String) -> Void) -> Void {
+//    completionBlock("a: \(a), b: \(b), value: \(value)")
+//  }
+//
+//  @addAsync
+//  func d(a: Int, for b: String, _ value: Double, completionBlock: @escaping () -> Void) -> Void {
+//    completionBlock()
+//  }
+//}
+//
+//
+//Task {
+//  let myStruct = MyStruct()
+//  let a = await myStruct.c(a: 5, for: "Test", 20)
+//  print(a)
+//
+//  await myStruct.d(a: 10, for: "value", 40)
+//}
+//
+//MyStruct().f(a: 1, for: "hello", 3.14159) { result in
+//  print("Eventually received \(result + "!")")
+//}
+//
+//#if canImport(SwiftUI)
+//import SwiftUI
+//
+//extension EnvironmentValues {
+//  @AutoEnvironmentKey
+//  var moof: Bool = false
+//}
+//#endif
